@@ -13,6 +13,7 @@ class BME280_Arduino {
         int8_t BME280_Init(uint8_t bme280_slave_addrs);
         void print_sensor_data(struct bme280_data *comp_data);
         int8_t stream_sensor_data_forced_mode();
+        int8_t get_sensor_data(struct bme280_data *comp_data);
     private:
          struct bme280_dev dev;
 
